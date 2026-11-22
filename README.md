@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://doxtract.manoonlabs.com/sign-up"><b>Get an API key</b></a> ·
-  <a href="https://doxtract.manoonlabs.com/docs">API docs</a> ·
+  <a href="https://doxtract.manoonlabs.com/developers">API docs</a> ·
   <a href="https://doxtract.manoonlabs.com/playground">Playground</a> ·
   <a href="https://doxtract.manoonlabs.com/docs/mcp">MCP server</a> ·
   <a href="https://doxtract.manoonlabs.com/benchmark">Benchmark</a>
@@ -118,7 +118,7 @@ On Deno, import `npm:@manoonlabs/doxtract`.
 
 ## Quick start
 
-1. [Sign up](https://doxtract.manoonlabs.com/sign-up) and create a key on the [API Keys](https://doxtract.manoonlabs.com/apikeys) page. The full secret is shown once.
+1. [Sign up](https://doxtract.manoonlabs.com/sign-up) and create a key on the [API Keys](https://doxtract.manoonlabs.com/settings/api-keys) page. The full secret is shown once.
 2. Put the key in your environment:
 
    ```sh
@@ -147,7 +147,7 @@ Not using Zod? Pass a plain JSON schema or a saved schema name instead. See [Wit
 
 If you leave out `apiKey`, the client reads `DOXTRACT_API_KEY`, then `DOC2JSON_API_KEY`. If there's no key at all, the constructor throws a `DoxtractError` with code `missing_api_key`. `Doc2Json` and `Doc2JsonError` are still exported.
 
-Want to see the output before writing code? Run a sample invoice in the [Playground](https://doxtract.manoonlabs.com/playground). No sign-in needed.
+Want to see the output before writing code? Run a sample invoice in the [Playground](https://doxtract.manoonlabs.com/playground). Sign in with a free account.
 
 ## Inputs
 
@@ -266,7 +266,7 @@ await doxtract.schemas.get("invoice"); // also includes .schema, the definition
 await doxtract.schemas.update("invoice", { name: "Invoice v2", schema: Invoice });
 ```
 
-You can also build schemas visually in the [schema editor](https://doxtract.manoonlabs.com/schemas).
+You can also build schemas visually in the [schema editor](https://doxtract.manoonlabs.com/settings/layouts).
 
 ## Excel and CSV export
 
